@@ -69,7 +69,7 @@ public class SystemManagementTest extends AbstractJpaIntegrationTest {
         // per tenant data
         final List<TenantUsage> tenants = systemManagement.getSystemUsageStatisticsWithTenants().getTenants();
         assertThat(tenants).hasSize(3);
-        assertThat(tenants).containsOnly(new TenantUsage("fletUpdate"),
+        assertThat(tenants).containsOnly(new TenantUsage("fleetUpdate"),
                 new TenantUsage("tenant0").setArtifacts(1).setOverallArtifactVolumeInBytes(1234),
                 new TenantUsage("tenant1").setArtifacts(1).setOverallArtifactVolumeInBytes(1234));
     }
