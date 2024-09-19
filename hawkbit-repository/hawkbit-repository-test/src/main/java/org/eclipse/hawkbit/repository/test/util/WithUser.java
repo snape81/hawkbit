@@ -48,7 +48,7 @@ public @interface WithUser {
      * 
      * @return test tenant id
      */
-    String tenantId() default "default";
+    String tenantId() default "fleetUpdate";
 
     /**
      * Should tenant auto created.
