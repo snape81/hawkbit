@@ -132,7 +132,7 @@ public class ControllerPreAuthenticatedSecurityHeaderFilterTest {
     }
 
     private static DmfTenantSecurityToken prepareSecurityToken(final String issuerHashHeaderValue) {
-        final DmfTenantSecurityToken securityToken = new DmfTenantSecurityToken("DEFAULT", CA_COMMON_NAME_VALUE,
+        final DmfTenantSecurityToken securityToken = new DmfTenantSecurityToken("fleetUpdate", CA_COMMON_NAME_VALUE,
                 FileResource.createFileResourceBySha1("12345"));
         securityToken.putHeader(CA_COMMON_NAME, CA_COMMON_NAME_VALUE);
         securityToken.putHeader(X_SSL_ISSUER_HASH_1, issuerHashHeaderValue);

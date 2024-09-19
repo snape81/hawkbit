@@ -16,8 +16,9 @@ set -xe
 # -r <local maven repository> the local maven repository the already built application jars are located into
 
 VERSION=0.4.0-SNAPSHOT
-FLAVOUR="standard"
+FLAVOUR="mysql"
 MVN_REPO=~/.m2/repository
+
 
 while getopts v:f:r: option
 do

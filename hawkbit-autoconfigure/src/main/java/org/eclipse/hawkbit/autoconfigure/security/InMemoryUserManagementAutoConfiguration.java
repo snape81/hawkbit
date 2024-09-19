@@ -43,7 +43,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 @EnableConfigurationProperties({ MultiUserProperties.class })
 public class InMemoryUserManagementAutoConfiguration extends GlobalAuthenticationConfigurerAdapter {
 
-    private static final String DEFAULT_TENANT = "DEFAULT";
+    private static final String DEFAULT_TENANT = "fleetUpdate";
 
     private final SecurityProperties securityProperties;
 

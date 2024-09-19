@@ -75,7 +75,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public class MgmtBasicAuthResourceTest {
 
     private static final String TEST_USER = "testUser";
-    private static final String DEFAULT = "default";
+    private static final String DEFAULT = "fleetUpdate";
 
     @Autowired
     MockMvc defaultMock;

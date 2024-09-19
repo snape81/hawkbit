@@ -31,7 +31,7 @@ import io.qameta.allure.Story;
 @Story("RemoteTenantAwareEvent Tests")
 public class RemoteTenantAwareEventTest extends AbstractRemoteEventTest {
 
-    private static final String TENANT_DEFAULT = "DEFAULT";
+    private static final String TENANT_DEFAULT = "fleetUpdate";
 
     private static final String APPLICATION_ID_DEFAULT = "Node";
 

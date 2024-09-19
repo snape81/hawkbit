@@ -184,7 +184,7 @@ public final class UserDetailsFormatter {
         if (authentication instanceof OAuth2AuthenticationToken) {
             final OidcUser oidcUser = (OidcUser) authentication.getPrincipal();
             final Object details = authentication.getDetails();
-            String tenant = "DEFAULT";
+            String tenant = "fleetUpdate";
             if (details instanceof TenantAwareAuthenticationDetails) {
                 tenant = ((TenantAwareAuthenticationDetails) details).getTenant();
             }

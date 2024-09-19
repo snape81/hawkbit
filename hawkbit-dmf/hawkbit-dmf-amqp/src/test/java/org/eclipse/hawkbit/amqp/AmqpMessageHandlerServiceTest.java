@@ -100,7 +100,7 @@ public class AmqpMessageHandlerServiceTest {
 
     private static final String SHA1 = "12345";
     private static final String VIRTUAL_HOST = "vHost";
-    private static final String TENANT = "DEFAULT";
+    private static final String TENANT = "fleetUpdate";
     private static final Long TENANT_ID = 123L;
     private static final String CONTROLLER_ID = "123";
     private static final Long TARGET_ID = 123L;
@@ -630,7 +630,7 @@ public class AmqpMessageHandlerServiceTest {
                 targetCaptor.capture(), any(Map.class));
         final ActionProperties actionProperties = actionPropertiesCaptor.getValue();
         assertThat(actionProperties).isNotNull();
-        assertThat(actionProperties.getTenant()).as("event has tenant").isEqualTo("DEFAULT");
+        assertThat(actionProperties.getTenant()).as("event has tenant").isEqualTo("fleetUpdate");
         assertThat(targetCaptor.getValue().getControllerId()).as("event has wrong controller id").isEqualTo("target1");
         assertThat(actionProperties.getId()).as("event has wrong action id").isEqualTo(22L);
     }
@@ -757,7 +757,7 @@ public class AmqpMessageHandlerServiceTest {
 
         when(actionMock.getDistributionSet()).thenReturn(distributionSetMock);
         when(actionMock.getId()).thenReturn(targetId);
-        when(actionMock.getTenant()).thenReturn("DEFAULT");
+        when(actionMock.getTenant()).thenReturn("fleetUpdate");
         when(actionMock.getTarget()).thenReturn(targetMock);
         when(actionMock.getActionType()).thenReturn(Action.ActionType.SOFT);
         when(targetMock.getControllerId()).thenReturn("target1");

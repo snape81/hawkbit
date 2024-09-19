@@ -72,7 +72,7 @@ import io.qameta.allure.Story;
 @SpringBootTest(classes = { RepositoryApplicationConfiguration.class })
 class AmqpMessageDispatcherServiceTest extends AbstractIntegrationTest {
 
-    private static final String TENANT = "default";
+    private static final String TENANT = "fleetUpdate";
     private static final Long TENANT_ID = 4711L;
 
     private static final URI AMQP_URI = IpUtil.createAmqpUri("vHost", "mytest");

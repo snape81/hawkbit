@@ -47,7 +47,7 @@ public class AmqpAuthenticationMessageHandlerIntegrationTest extends AbstractAmq
 
     private static final String TARGET_SECRUITY_TOKEN = "12345";
     private static final String TARGET_TOKEN_HEADER = "TargetToken " + TARGET_SECRUITY_TOKEN;
-    private static final String TENANT_EXIST = "DEFAULT";
+    private static final String TENANT_EXIST = "fleetUpdate";
     private static final String TARGET = "NewDmfTarget";
 
     @Autowired

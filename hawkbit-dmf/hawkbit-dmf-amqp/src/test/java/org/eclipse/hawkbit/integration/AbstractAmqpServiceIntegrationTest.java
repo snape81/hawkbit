@@ -76,7 +76,7 @@ import io.qameta.allure.Step;
         TestSupportBinderAutoConfiguration.class })
 public abstract class AbstractAmqpServiceIntegrationTest extends AbstractAmqpIntegrationTest {
 
-    protected static final String TENANT_EXIST = "DEFAULT";
+    protected static final String TENANT_EXIST = "fleetUpdate";
     protected static final String CREATED_BY = "CONTROLLER_PLUG_AND_PLAY";
     protected static final String CORRELATION_ID = UUID.randomUUID().toString();
 

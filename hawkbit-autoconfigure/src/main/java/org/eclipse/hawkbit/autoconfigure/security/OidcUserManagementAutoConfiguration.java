@@ -208,7 +208,7 @@ public class OidcUserManagementAutoConfiguration {
                 final HttpServletRequest request, final HttpServletResponse response,
                 final Authentication authentication) throws ServletException, IOException {
             if (authentication instanceof AbstractAuthenticationToken token) {
-                final String defaultTenant = "DEFAULT";
+                final String defaultTenant = "fleetUpdate";
 
                 token.setDetails(new TenantAwareAuthenticationDetails(defaultTenant, false));
 
@@ -331,7 +331,7 @@ public class OidcUserManagementAutoConfiguration {
                 throws IOException, ServletException {
             final Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
             if (authentication instanceof JwtAuthenticationToken jwtAuthenticationToken) {
-                final String defaultTenant = "DEFAULT";
+                final String defaultTenant = "fleetUpdate";
 
                 final Jwt jwt = jwtAuthenticationToken.getToken();
                 final OidcIdToken idToken = new OidcIdToken(jwt.getTokenValue(), jwt.getIssuedAt(), jwt.getExpiresAt(),

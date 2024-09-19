@@ -80,7 +80,7 @@ public class AmqpControllerAuthenticationTest {
 
     private static final String SHA1 = "12345";
     private static final Long ARTIFACT_ID = 1123L;
-    private static final String TENANT = "DEFAULT";
+    private static final String TENANT = "fleetUpdate";
     private static final Long TENANT_ID = 123L;
     private static final String CONTROLLER_ID = "123";
     private static final Long TARGET_ID = 123L;
